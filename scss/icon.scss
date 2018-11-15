@@ -1,0 +1,56 @@
+@import "_oa";
+
+@include font-face("icomoon", font-files("icomoon/fonts/icomoon.eot", "icomoon/fonts/icomoon.woff", "icomoon/fonts/icomoon.ttf", "icomoon/fonts/icomoon.svg"));
+[class^="icon-"], [class*=" icon-"] {
+  font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal;
+  @include font-smoothing(antialiased);
+}
+
+.icon-dot-single:before {
+  content: "\e90d";
+}
+.icon-x:before {
+  content: "\e90c";
+}
+.icon-arrow-long-left:before {
+  content: "\e900";
+}
+.icon-arrow-long-right:before {
+  content: "\e901";
+}
+.icon-chevron-down:before {
+  content: "\e902";
+}
+.icon-chevron-small-down:before {
+  content: "\e903";
+}
+.icon-chevron-small-right:before {
+  content: "\e904";
+}
+.icon-chevron-small-up:before {
+  content: "\e905";
+}
+.icon-chevron-thin-left:before {
+  content: "\e906";
+}
+.icon-chevron-thin-right:before {
+  content: "\e907";
+}
+.icon-chevron-up:before {
+  content: "\e908";
+}
+.icon-instagram:before {
+  content: "\e909";
+}
+.icon-menu:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-date_range:before {
+  content: "\e916";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
