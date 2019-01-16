@@ -34,7 +34,10 @@ html {
     font-size: medium;
     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif, "微軟正黑體", "Microsoft JhengHei";
 
-    background: rgba(245, 245, 245, 1.00);
+    background-image: url(../img/pbg.jpg);
+    background-repeat: repeat;
+    // background: rgba(245, 245, 245, 1.00);
+
     // background-image: $mainBackgroundImage;
 
     @include font-smoothing(antialiased);
@@ -607,9 +610,10 @@ html {
   z-index: 1;
   display: inline-block;
   width: 100%;
-  height: 650px;
-  line-height: 650px;
+  height: 600px;
+  line-height: 600px;
   overflow: hidden;
+  
   @include range-width(0, 900px) {
     height: 460px;
     line-height: 460px;
