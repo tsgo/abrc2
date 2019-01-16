@@ -613,7 +613,7 @@ html {
   height: 600px;
   line-height: 600px;
   overflow: hidden;
-  
+
   @include range-width(0, 900px) {
     height: 460px;
     line-height: 460px;
@@ -730,6 +730,11 @@ html {
         width: calc(100% - 386px);
         padding-left: 30px;
         padding-right: 30px;
+
+        &.change_l {
+          width: calc(100% - 300px);
+        }
+
         @include range-width(0, 920px) {
           padding-left: 16px;
           padding-right: 16px;
@@ -742,16 +747,23 @@ html {
       &.r {
         width: 386px;
         padding-right: 30px;
+
+        &.change_r {
+          width: 300px;
+        }
+
         @include range-width(0, 920px) {
           padding-right: 16px;
         }
       }
+
       @include range-width(0, 420px) {
         &.l, &.r {
           width: 100%;
           padding: 0 8px;
         }
       }
+
       @include range-width(420px, 768px) {
         &.l, &.r {
           width: 100%;
@@ -764,6 +776,7 @@ html {
         }
       }
     }
+
     .l {
       .mix-box {
         position: relative;
@@ -1059,10 +1072,9 @@ html {
           > a {
             display: inline-block;
             width: 100%;
-            min-height: 80px;
-            line-height: 24px;
-            padding: 0 16px;
-            padding-top: 20px;
+            // min-height: 80px;
+            // line-height: 24px;
+            padding: 20px 16px;
             color: rgba(254, 255, 255, 1.00);
             margin-top: 16px;
             text-decoration: none;
@@ -1089,7 +1101,7 @@ html {
 
           &.py {
             > a {
-              line-height: 40px;
+              // line-height: 40px;
 
               &.a, &:hover {
                 background-color: rgba(254, 171, 4, 1.00);
@@ -2402,8 +2414,8 @@ html {
     height: 50px;
     line-height: 50px;
     margin: 0 30px;
-    margin-bottom: 16px;
-    border-top: 1px solid rgba(176, 176, 176, 1.00);
+    margin-top: 16px;
+    border-bottom: 1px solid rgba(176, 176, 176, 1.00);
     @include clearfix();
     > * {
       float: left;
