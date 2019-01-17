@@ -31,7 +31,7 @@ html {
 
     color: rgba(90, 90, 90, 1.00);
     text-align: center;
-    font-size: medium;
+    font-size: 1rem;
     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif, "微軟正黑體", "Microsoft JhengHei";
 
     background-image: url(../img/pbg.jpg);
@@ -125,7 +125,7 @@ html {
           color: rgba(250, 250, 250, 1);
 
           @include input-placeholder {
-            font-size: 13px;
+            font-size: 1rem;
             font-weight: normal;
             color: rgba(120, 120, 120, 1);
           }
@@ -310,7 +310,7 @@ html {
         
         height: 80px - 2px;
         line-height: 80px - 2px;
-        font-size: 16px;
+        font-size: 1.3rem;
         cursor: pointer;
         color: rgba(138, 138, 138, 1.00);
         text-decoration: none;
@@ -320,21 +320,21 @@ html {
 
         &.en_menu {
           width: calc(100% / 7 - 2px) !important;
-          font-size: 15px;
+          font-size: 1.2rem;
           padding-left: 16px !important;
 
           @include range-width(840px, 1035px) {
-            font-size: 13px;
+            font-size: 1rem;
             padding-left: 5px !important;
           }
           @include range-width(765px, 840px) {
-            font-size: 10px;
+            font-size: .9rem;
             padding-left: 5px !important;
           }
         }
 
         > div { > a { padding-left: 30px; } }
-        @include range-width(0, 850px) { padding-left: 8px; font-size: 16px; > div { > a { padding-left: 8px; } } }
+        @include range-width(0, 850px) { padding-left: 8px; font-size: 1.3rem; > div { > a { padding-left: 8px; } } }
         @include range-width(850px, 970px) { padding-left: 10px; > div { > a { padding-left: 10px; } } }
         @include range-width(970px, 1050px) { padding-left: 20px; > div { > a { padding-left: 20px; } } };
 
@@ -385,15 +385,15 @@ html {
         }
 
         &.en_menu {
-          font-size: 15px;
+          font-size: 1.2rem;
           padding-left: 16px;
 
           @include range-width(770px, 1035px) {
-            font-size: 13px;
+            font-size: 1rem;
             padding-left: 8px !important;
           }
           @include range-width(765px, 840px) {
-            font-size: 10px;
+            font-size: .9rem;
             padding-left: 5px !important;
           }
         }
@@ -496,7 +496,7 @@ html {
         line-height: 24px;
         text-align: right;
         padding-right: 4px;
-        font-size: 14px;
+        font-size: 1.1rem;
       }
 
       > form {
@@ -519,7 +519,7 @@ html {
           color: rgba(0, 0, 0, 1.00);
 
           @include input-placeholder {
-            font-size: 13px;
+            font-size: 1rem;
             font-weight: normal;
             color: rgba(120, 120, 120, 1);
           }
@@ -639,7 +639,7 @@ html {
     };
 
     
-    font-size: 100px;
+    font-size: 8.3rem;
     color: white;
     text-decoration: none;
     z-index: 3;
@@ -652,10 +652,10 @@ html {
       right: 0;
     }
     @include range-width(0, 768px) {
-      font-size: 70px;
+      font-size: 5.8rem;
     }
     @include range-width(0, 420px) {
-      font-size: 50px;
+      font-size: 4rem;
       width: 70px;
       // display: none;
     }
@@ -858,7 +858,7 @@ html {
             display: inline-block;
             width: 100%;
             color: rgba(137, 137, 137, 1.00);
-            font-size: 16px;
+            font-size: 1.3rem;
             line-height: 20px;
             word-break: break-all;
             height: 20px * 4;
@@ -883,7 +883,7 @@ html {
             text-decoration: none;
             height: 28px;
             line-height: 28px;
-            font-size: 14px;
+            font-size: 1.1rem;
           }
           @include range-width(0, 600px) {
             &.a {
@@ -1078,7 +1078,7 @@ html {
             color: rgba(254, 255, 255, 1.00);
             margin-top: 16px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1.3rem;
             background-color: rgba(200, 201, 202, 1.00);
             @include transition(background-color .3s);            
           }
@@ -1183,7 +1183,7 @@ html {
     width: calc(100% - 120px);
     text-align: left;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
 
     + * {
       width: 120px;
@@ -1194,7 +1194,7 @@ html {
         color: white;
         height: 30px;
         line-height: 30px;
-        font-size: 14px;
+        font-size: 1.1rem;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -1231,7 +1231,7 @@ html {
       display: inline-block;
       width: 100%;
       text-align: left;
-      font-size: 15px;
+      font-size: 1.2rem;
       text-decoration: underline;
       color: rgba(80, 80, 80, 1.00);
       margin-top: 10px;
@@ -1306,7 +1306,7 @@ html {
       color: rgba(0, 0, 0, 1.00);
       // height: 32px;
       // line-height: 32px;
-      font-size: 18px;
+      font-size: 1.3rem;
       margin: 8px 0;
       margin-bottom: 4px;
       // @include overflow-docx3();
@@ -1331,14 +1331,14 @@ html {
         height: 100%;
         padding: 14px;
         h4 {
-          font-size: 18px;
+          font-size: 1.5rem;
           margin-top: 0;
           // height: 32px;
           // line-height: 32px;
           // @include overflow-docx3();
         }
         p {
-          font-size: 18px;
+          font-size: 1.5rem;
           // line-height: 20px;
           height: 75px;
         }
@@ -1360,7 +1360,7 @@ html {
         padding: 0 8px;
         background-color: rgba(137, 156, 29, 1.00);
         color: white;
-        font-size: 14px;
+        font-size: 1.1rem;
       }
     }
 
@@ -1473,7 +1473,7 @@ html {
     text-decoration: none;
     height: 28px;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 1.1rem;
   }
 }
 .nk {
@@ -1589,10 +1589,10 @@ html {
           text-align: center;
           @include overflow-docx3();
           @include range-width(0, 500px) {
-            font-size: 13px;
+            font-size: 1rem;
           }
           @include range-width(768px, 850px) {
-            font-size: 13px;
+            font-size: 1rem;
           }
         }
       }
@@ -1607,7 +1607,7 @@ html {
           margin: 0;
           text-align: left;
           color: rgba(135, 136, 137, 1.00);
-          font-size: 18px;
+          font-size: 1.2rem;
 
           // word-wrap:break-word;
           
@@ -1721,7 +1721,7 @@ html {
   > span {
     display: block;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-top: 16px;
     padding: 0 20px;
     color: rgba(14, 14, 14, 1.00);
@@ -1737,7 +1737,7 @@ html {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5rem;
     line-height: 24px;
     height: 24px * 10;
     overflow: hidden;
@@ -1762,7 +1762,7 @@ html {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 24px;
     height: 24px * 10;
     overflow: hidden;
@@ -1898,7 +1898,7 @@ html {
       width: 50%;
       height: 100%;
       cursor: pointer;
-      font-size: 24px;
+      font-size: 2rem;
       @include transition(background-color .3s, color .3s);
       color: rgba(255, 255, 255, 1.00);
       background-color: rgba(201, 201, 201, 1.00);
@@ -1991,7 +1991,7 @@ html {
           width: 100%;
           line-height: 20px;
           height: 3 * 20px;
-          font-size: 18px;
+          font-size: 1.5rem;
           overflow: hidden;
           text-align: left;
           padding-left: 8px;
@@ -2010,7 +2010,7 @@ html {
         background-color: rgba(201, 201, 201, 1.00);
         @include transition(background-color .3s);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 1.6rem;
         margin-top: 16px;
         text-transform: uppercase;
         &:hover {
@@ -2050,7 +2050,7 @@ html {
         display: inline-block;
         text-decoration: none;
         color: rgba(159, 160, 161, 1.00);
-        font-size: 20px;
+        font-size: 1.6rem;
         &.a {
           color: rgba(3, 34, 96, 1.00);
         }
@@ -2091,7 +2091,7 @@ html {
         padding: 0 8px;
         background-color: rgba(137, 156, 29, 1.00);
         color: white;
-        font-size: 14px;
+        font-size: 1.1rem;
       }
     }
   }
@@ -2277,14 +2277,14 @@ html {
       }
       > div {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 14px;
+        font-size: 1.1rem;
         line-height: 18px;
         height: 18px * 2;
         overflow: hidden;
       }
       > a {
         text-decoration: none;
-        font-size: 10px;
+        font-size: .9rem;
         margin-top: 2px;
         font-weight: bold;
         cursor: pointer;
@@ -2309,7 +2309,7 @@ html {
 
     text-align: left;
     > h1 {
-      font-size: 22px;
+      font-size: 1.8rem;
     }
     > p {
       line-height: 33px;
@@ -2452,7 +2452,7 @@ html {
       content: attr(title);
       display: inline-block;
       width: 100%;
-      font-size: 24px;
+      font-size: 1.8rem;
       float: left;
       text-align: left;
 
@@ -2680,7 +2680,7 @@ html {
     > * {
       padding-left: 30px;
       padding-top: 3px;
-      font-size: 14px;
+      font-size: 1.1rem;
       width: calc(50% - 8px / 2);
       + * {
         margin-left: 8px;
@@ -2732,7 +2732,7 @@ html {
       border-collapse: separate;
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
-      font-size: 14px;
+      font-size: 1.1rem;
 
       thead {
         tr {
@@ -2804,7 +2804,7 @@ html {
       border-collapse: separate;
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
-      font-size: 14px;
+      font-size: 1.1rem;
       + table {
         margin-top: 8px;
       }
@@ -2898,7 +2898,7 @@ html {
       border-collapse: separate;
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
-      font-size: 14px;
+      font-size: 1.1rem;
       + table {
         margin-top: 8px;
       }
@@ -2993,7 +2993,7 @@ html {
           margin-top: -60px;
         }
         > p {
-          font-size: 14px;
+          font-size: 1.1rem;
         }
       }
       @include range-width(450px, 650px) {
@@ -3083,7 +3083,7 @@ html {
           margin-top: -60px;
         }
         > p {
-          font-size: 14px;
+          font-size: 1.1rem;
         }
       }
       @include range-width(450px, 650px) {
@@ -3144,7 +3144,7 @@ html {
         width: 100%;
         height: 30px;
         line-height: 30px;
-        font-size: 16px;
+        font-size: 1.3rem;
 
         @include overflow-docx3();
       }
@@ -3161,6 +3161,70 @@ html {
       }
       &.lb {
         background-color: rgba(1, 195, 156, 1.00);
+      }
+    }
+  }
+
+  .learned {
+    display: inline-block;
+    width: calc(100% / 4 - 20px * 3 / 4);
+    @include border-radius(3px);
+    // padding: 15px;
+    float: left;
+    margin-top: 32px;
+    background-color: white;
+    max-height: 300px;
+    
+
+    &:nth-child(4n+1), &:nth-child(4n+2), &:nth-child(4n+3) {
+      margin-right: 20px;
+    }
+
+    .learned_pic {
+      display: inline-block;
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(106, 106, 106, .2);
+
+      img {
+        width: 100%;
+        max-width: 270px;
+      }
+    }
+
+    .learned_type {
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+      a {
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+        @include transition(all .3s);
+        margin-bottom: 10px;
+        &:hover, &:active {
+          color: rgba(10, 32, 81, 1.00);
+        }
+      }
+
+      p {
+        display: inline-block;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+
+        &:before {
+          display: inline-block;
+          content: '・';
+          color: rgba(10, 32, 81, 1.00);
+        }
       }
     }
   }
@@ -3212,17 +3276,17 @@ html {
         width: 100%;
         height: 36px;
         line-height: 36px;
-        font-size: 22px;
+        font-size: 1.3rem;
       }
       span {
         display: inline-block;
         width: 100%;
         height: 26px;
         line-height: 26px;
-        font-size: 18px;
+        font-size: 1rem;
 
         &.for_e {
-          font-size: 16px;
+          font-size: 1.3rem;
           height: auto;
           // word-break: break-all;
         }
@@ -3233,7 +3297,7 @@ html {
         a {
           // text-decoration: none;
           color: white;
-          font-size: 18px;
+          font-size: 1rem;
           cursor: pointer;
         }
       }
@@ -3251,7 +3315,7 @@ html {
           line-height: 48px;
           text-decoration: none;
           text-align: center;
-          font-size: 25px;
+          font-size: 1.6rem;
           background-color: rgba(38, 63, 114, 1.00);
           color: white;
           @include border-radius(50%);
@@ -3324,7 +3388,7 @@ html {
   line-height: 60px;
   background-color: rgba(0, 0, 0, 1.00);
   color: white;
-  font-size: 18px;
+  font-size: 1.5rem;
   > div {
     display: inline-block;
     width: 100%;
@@ -3336,7 +3400,7 @@ html {
     font-weight: bold;
     @include clearfix();
 
-    font-size: 13px;
+    font-size: 1rem;
   }
 
   @include range-width(0, 768px) {
@@ -3344,7 +3408,7 @@ html {
     padding: 5px 0;
     height: 100%;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 1.2rem;
     > div {
       text-align: center;
     }
@@ -3510,7 +3574,7 @@ html {
     width: 72px;
     height: 72px;
     line-height: 72px;
-    font-size: 50px;
+    font-size: 4rem;
     content: '\e905';
     font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal;
     @include font-smoothing(antialiased);
@@ -3529,7 +3593,7 @@ html {
 
 .y18 {
   .tip>* {
-    font-size: 28px;
+    font-size: 2.3rem;
   }
   .atc {
     margin-top: 16px;
@@ -3650,7 +3714,7 @@ html {
         > * {
           display: block;
           text-align: left;
-          font-size: 14px;
+          font-size: 1.1rem;
           color: rgba(47, 47, 47, 1.00);
         }
         span {
@@ -3663,7 +3727,7 @@ html {
           text-decoration: none;
           margin-top: 8px;
           font-weight: bold;
-          font-size: 13px;
+          font-size: 1rem;
         }
       }
     }
@@ -3733,7 +3797,7 @@ body.blackMark{
       display: inline-block;
       padding: 0;
       margin: 0;
-      font-size: 18px;
+      font-size: 1.2rem;
       color: black;
     }
 
@@ -3747,7 +3811,7 @@ body.blackMark{
       padding: 8px 30px;
       outline: 0;
       border: 0;
-      font-size: 18px;
+      font-size: 1.5rem;
       color: white;
       background-color: rgba(106, 106, 106, .8);
       @include border-radius(3px);
