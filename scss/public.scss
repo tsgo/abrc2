@@ -2596,6 +2596,15 @@ html {
     padding: 16px;
     margin-top: 16px;
   } 
+
+  p {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+
   > * {
     text-align: left;
     display: inline-block;
