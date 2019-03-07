@@ -1737,9 +1737,9 @@ html {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 24px;
-    height: 24px * 10;
+    font-size: 1.2rem;
+    // line-height: 24px;
+    // height: 24px * 10;
     overflow: hidden;
     word-break: break-all;
     padding: 0 20px;
@@ -1990,8 +1990,10 @@ html {
         *:not(._ic) {
           width: 100%;
           line-height: 20px;
-          height: 3 * 20px;
-          font-size: 1.5rem;
+          // height: 3 * 20px;
+          height: 70px;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
           overflow: hidden;
           text-align: left;
           padding-left: 8px;
