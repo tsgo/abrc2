@@ -59,6 +59,7 @@ html {
   display: inline-block;
   width: 100%;
   height: 60px;
+  font-size: .9rem;
 
   @include range-width(0, 768px) {
     height: 20px;
@@ -95,10 +96,10 @@ html {
           }
           + a {
             position: relative;
-            margin-left: 12px;
+            margin-left: 15px;
             
             &:before {
-              content: '.';
+              content: '・';
               position: absolute;
               display: inline-block;
               left: -8px;
@@ -385,7 +386,7 @@ html {
         }
 
         &.en_menu {
-          font-size: 1.2rem;
+          font-size: 1rem;
           padding-left: 16px;
 
           @include range-width(770px, 1035px) {
@@ -858,8 +859,8 @@ html {
             display: inline-block;
             width: 100%;
             color: rgba(137, 137, 137, 1.00);
-            font-size: 1.1rem;
-            line-height: 23px;
+            font-size: .9rem;
+            line-height: 21px;
             word-break: break-all;
             height: 20px * 4;
             overflow: hidden;
@@ -881,9 +882,9 @@ html {
             background-color: rgba(3, 33, 94, 1.00);
             color: white;
             text-decoration: none;
-            height: 28px;
-            line-height: 28px;
-            font-size: 1rem;
+            height: 30px;
+            line-height: 31px;
+            font-size: .9rem;
           }
           @include range-width(0, 600px) {
             &.a {
@@ -1193,8 +1194,8 @@ html {
         padding: 0 16px;
         color: white;
         height: 30px;
-        line-height: 30px;
-        font-size: 1.1rem;
+        line-height: 31px;
+        font-size: .9rem;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -1471,9 +1472,9 @@ html {
     background-color: rgba(3, 33, 94, 1.00);
     color: white;
     text-decoration: none;
-    height: 28px;
-    line-height: 28px;
-    font-size: 1rem;
+    height: 30px;
+    line-height: 31px;
+    font-size: .9rem;
   }
 }
 .nk {
@@ -1721,7 +1722,7 @@ html {
   > span {
     display: block;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 16px;
     padding: 0 20px;
     color: rgba(14, 14, 14, 1.00);
@@ -1737,7 +1738,7 @@ html {
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     // line-height: 24px;
     // height: 24px * 10;
     overflow: hidden;
@@ -1898,7 +1899,7 @@ html {
       width: 50%;
       height: 100%;
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       @include transition(background-color .3s, color .3s);
       color: rgba(255, 255, 255, 1.00);
       background-color: rgba(201, 201, 201, 1.00);
@@ -2012,7 +2013,7 @@ html {
         background-color: rgba(201, 201, 201, 1.00);
         @include transition(background-color .3s);
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-top: 16px;
         text-transform: uppercase;
         &:hover {
@@ -3184,7 +3185,7 @@ html {
     float: left;
     margin-top: 32px;
     background-color: white;
-    max-height: 300px;
+    height: 460px;
     
 
     &:nth-child(4n+1), &:nth-child(4n+2), &:nth-child(4n+3) {
@@ -3194,7 +3195,7 @@ html {
     .learned_pic {
       display: inline-block;
       width: 100%;
-      height: 150px;
+      height: 280px;
       overflow: hidden;
       border-bottom: 1px solid rgba(106, 106, 106, .2);
 
@@ -3228,10 +3229,13 @@ html {
         display: inline-block;
         width: 100%;
         font-size: 1rem;
-        padding: 0;
+        padding: 0 0 0 10px;
         margin: 0;
+        position: relative;
 
         &:before {
+          position: absolute;
+          left: -8px;
           display: inline-block;
           content: '・';
           color: rgba(10, 32, 81, 1.00);
@@ -3287,14 +3291,14 @@ html {
         width: 100%;
         height: 36px;
         line-height: 36px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
       span {
         display: inline-block;
         width: 100%;
         height: 26px;
         line-height: 26px;
-        font-size: 1rem;
+        font-size: .9rem;
 
         &.for_e {
           font-size: 1.3rem;
