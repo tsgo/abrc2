@@ -1,0 +1,13 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2017 OA Wu Design
+ * @license     http://creativecommons.org/licenses/by-nc/2.0/tw/
+ */
+
+@import "_oa";
+
+#top {
+  @include range-width(0, 1250px) {
+    padding: 0 10px;
+  }
+}
