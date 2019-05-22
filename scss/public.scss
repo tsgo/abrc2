@@ -64,12 +64,12 @@ html {
   height: 60px;
   font-size: .9rem;
 
-  // @include range-width(0, 1250px) {
-  //   padding: 0 10px;
-  // }
+  @include range-width(768px, 1250px) {
+    padding: 0 10px;
+  }
 
   @include range-width(0, 768px) {
-    height: 20px;
+    height: 30px;
   };
 
   background-color: rgba(45, 45, 45, 1.00);
@@ -221,14 +221,18 @@ html {
 
       @include range-width(0, 850px) {
         &.n1, &.n2 { display: none; }
-        &.n3 { float: right;
+        &.n3 { 
+          float: right;
+          text-align: right;
           @include range-width(0, 768px) {
-            height: 20px;
-            line-height: 20px;
+            margin-right: 10px;
+            height: 30px;
+            line-height: 30px;
             > a {
-              bottom: -20px;
-              height: 20px;
-              line-height: 20px;
+              text-align: center;
+              bottom: -30px;
+              height: 30px;
+              line-height: 30px;
             }
           }
         }
@@ -279,10 +283,15 @@ html {
         -webkit-filter: drop-shadow(-1px -2px 1px rgba(255,255,255, .9));
         filter: drop-shadow(-1px -2px 1px rgba(255,255,255, .9));
 
-        @include range-width(0, 768px) {
+        @include range-width(415px, 768px) {
           margin-top: 6px;
           margin-bottom: 6px;
-        };
+        }
+
+        @include range-width(0, 415px) {
+          margin-top: 4px;
+          margin-bottom: 4px;
+        }
       }
     }
     
@@ -334,6 +343,14 @@ html {
           }
         }
 
+        @include range-width(0, 769px) {
+          span {
+            &:after {
+              padding-left: 5px;
+            }
+          }
+        }
+
         // padding-left: 40px;
 
         &.en_menu {
@@ -352,8 +369,8 @@ html {
         }
 
         > div { > a { padding-left: 30px; } }
-        @include range-width(0, 850px) { padding-left: 8px; font-size: 1.3rem; > div { > a { padding-left: 8px; } } }
-        @include range-width(850px, 970px) { padding-left: 10px; > div { > a { padding-left: 10px; } } }
+        @include range-width(0, 769px) { padding-left: 8px; font-size: 1rem; > div { > a { padding-left: 8px; } } }
+        @include range-width(769px, 970px) { padding-left: 10px; > div { > a { padding-left: 10px; } } }
         @include range-width(970px, 1050px) { padding-left: 20px; > div { > a { padding-left: 20px; } } };
 
         + * {
@@ -519,17 +536,36 @@ html {
         content: "\e90a";
       }
     }
+
     .mmenu {
 
       @include range-width(768px) {
         display: none;
       }
+
       position: absolute;
       left: 0;
-      top: 70px + 32px;
+      top: 93px;
       display: none;
-      width: 230px;
-      background-color: rgba(255, 255, 255, .9);
+      // width: 230px;
+      width: 100%;
+      background-color: rgba(234, 235, 239, .9);
+
+      @include range-width(415px) {
+        top: 104px;
+      }
+
+      @include range-width(376px, 415px) {
+        top: 98px;
+      }
+
+      @include range-width(321px, 376px) {
+        top: 96px;
+      }
+
+      @include range-width(0, 321px) {
+        top: 89px;
+      }
       
       > label[for='mmenu'] {
         display: inline-block;
@@ -570,6 +606,7 @@ html {
             outline: 0;
           }
         }
+
         > button {
           position: absolute;
           right: 16px;
@@ -591,8 +628,10 @@ html {
           }
         }
       }
+
       > * {
       }
+
       > label:not(for) {
         display: inline-block;
         width: 100%;
@@ -612,9 +651,11 @@ html {
             content: "\e902";
           }
         }
+
         div {
           display: none;
         }
+
         input {
           &:checked {
             ~ div {
@@ -634,6 +675,7 @@ html {
           }
         }
       }
+
       > a {
         min-height: 28px;
         line-height: 28px;
@@ -754,8 +796,13 @@ html {
 #index-main, #list-main, #content-main, #table-main, #one-main {
   display: inline-block;
   width: 100%;
-  @include range-width(0, 920px) {
+
+  @include range-width(450px, 920px) {
     margin-top: 8px;
+  }
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
   }
 
   > div {
@@ -1274,6 +1321,10 @@ html {
       font-size: 1.5rem;
       color: rgba(40, 40, 40, .9);
       font-weight: medium;
+
+      @include range-width(0, 450px) {
+        font-size: 1.3rem;
+      }
     }
 
     > * {
@@ -3558,7 +3609,7 @@ html {
     padding-right: 10px; 
   }
 
-  @include range-width(450px, 770px) {
+  @include range-width(450px, 768px) {
     margin-top: 30px;
   }
 
@@ -3574,9 +3625,20 @@ html {
     }
   }
 
-  @include range-width(0, 450px) {
+  @include range-width(321px, 450px) {
     margin-top: 30px;
-    line-height: auto;
+    font-weight: thin;
+    padding: 6px;
+    line-height: 38px;
+
+    > div {
+      font-size: .8rem;
+      text-align: center;
+    }
+  }
+
+  @include range-width(0, 321px) {
+    margin-top: 30px;
     font-weight: thin;
     padding: 6px;
     line-height: 20px;

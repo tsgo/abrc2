@@ -6,12 +6,6 @@
 
 @import "_oa";
 
-#top {
-  @include range-width(0, 1250px) {
-    padding: 0 10px;
-  }
-}
-
 p {
   padding: 0;
   margin: 0;
@@ -38,6 +32,12 @@ p {
     background-color: rgba(102, 54, 130, 1.00) ;
     margin-top: 5px;
     margin-right: 10px;
+  }
+
+  @include range-width(0, 450px) {
+    &:before {
+      height: 25px;
+    }
   }
 }
 
