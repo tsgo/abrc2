@@ -15,6 +15,7 @@
 p {
   padding: 0;
   margin: 0;
+  font-size: 1rem;
 }
 
 .textS_bord {
@@ -27,3 +28,16 @@ p {
   padding: 10px 0;
   margin: 20px 0;
 }
+
+.color_p {
+  &:before {
+    display: inline-block;
+    content: '';
+    height: 30px;
+    width: 5px;
+    background-color: rgba(102, 54, 130, 1.00) ;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
+

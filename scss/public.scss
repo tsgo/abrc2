@@ -784,7 +784,7 @@ html {
         @include range-width(0, 920px) {
           padding-left: 16px;
           padding-right: 16px;
-        };
+        }
 
         &.lw_all {
           width: 100%;
@@ -1063,6 +1063,7 @@ html {
     }
   }
 }
+
 #nav {
   display: inline-block;
   width: 100%;
@@ -1098,6 +1099,7 @@ html {
     }
   }
 }
+
 #list-main, #content-main, #table-main {
   > div {
     > * {
@@ -1178,6 +1180,7 @@ html {
     }
   }
 }
+
 #table-main {
   > div {
     > * {
@@ -1201,6 +1204,7 @@ html {
     }
   }
 }
+
 #one-main {
   > div {
     > * {
@@ -1539,6 +1543,7 @@ html {
     font-size: .9rem;
   }
 }
+
 .nk {
   display: inline-block;
   width: 100%;
@@ -1711,6 +1716,7 @@ html {
     }
   }
 }
+
 .pks {
   position: relative;
   display: inline-block;
@@ -1751,6 +1757,7 @@ html {
     }
   }
 }
+
 .pk {
   position: relative;
   display: inline-block;
@@ -1937,6 +1944,7 @@ html {
     }
   }
 }
+
 .tk {
   display: inline-block;
   width: 100%;
@@ -2085,6 +2093,7 @@ html {
     }
   }
 }
+
 .pgs {
   display: inline-block;
   width: 100%;
@@ -2123,6 +2132,7 @@ html {
     }
   }
 }
+
 .atc {
   position: relative;
   display: inline-block;
@@ -2395,8 +2405,22 @@ html {
 
       a {
         display: inline-block;
+        cursor: pointer;
         text-decoration: none;
-        color: rgba(102, 54, 130, 1.00);
+        color: rgba(44, 74, 144, 1.00);
+        margin-top: 15px;
+        font-size: 1.1rem;
+
+        &:before {
+          display: inline-block;
+          content: '\e90e';
+          font-family: icomoon;
+          margin-right: 10px;
+        }
+
+        &:hover, &:active {
+          color: rgba(44, 74, 144, .8);
+        }
       }
     }
 
@@ -2666,6 +2690,7 @@ html {
     }
   }
 }
+
 .bls {
   position: relative;
   display: inline-block;
@@ -2710,6 +2735,7 @@ html {
     }
   }
 }
+
 .np {
   display: inline-block;
   width: 100%;
@@ -2790,6 +2816,7 @@ html {
     }
   }
 }
+
 .t1, .t2, .t3, .t4 {
   position: relative;
   display: inline-block;
@@ -2813,6 +2840,7 @@ html {
     overflow: auto;
   }
 }
+
 .t1, .t2 {
   > div {
     table {
@@ -2874,16 +2902,19 @@ html {
     }
   }
 }
+
 .t1 {
   table {
     min-width: 700px;
   }
 }
+
 .t2 {
   table {
     min-width: 500px;
   }
 }
+
 .t3 {
   > div {
     table {
@@ -2978,6 +3009,7 @@ html {
     }
   }
 }
+
 .t4 {
   > div {
     table {
@@ -3048,6 +3080,7 @@ html {
     }
   }
 }
+
 .its {
   position: relative;
   display: inline-block;
@@ -3327,23 +3360,33 @@ html {
 #index-bpanel, #contact-bpanel {
   display: inline-block;
   width: 100%;
-  height: 370px;
+  height: 350px;
   margin-top: 64px;
   background-color: rgba(6, 35, 91, 1.00);
 
   > div {
     display: inline-block;
     width: 100%;
-    height: 370px;
+    height: 320px;
     max-width: 1200px;
-    padding: 15px 30px;
+    padding: 35px 0;
     margin: 0 auto;
     @include clearfix();
+
+    @include range-width(920px, 1220px) {
+      padding: 20px 10px;
+    }
+
+    @include range-width(0, 920px) {
+      padding: 20px 26px;
+    }
+
     > * {
       float: left;
       display: inline-block;
       width: calc(100% - 456px - 310px);
     }
+
     .n1 {
       width: 456px;
       text-align: left;
@@ -3352,18 +3395,20 @@ html {
       img {
         max-width: 100%;
         + img {
-          margin-top: 48px;
+          margin-top: 20px;
         }
       }
     }
+
     .n2 {
       width: 310px;
       border: 2px solid white;
       border-left: 0;
       border-right: 0;
-      height: 400px - 30px * 2 - 2px * 2;
+      height: 350px - 30px * 2 - 2px * 2;
       color: white;
       text-align: left;
+
       h3 {
         margin: 0;
         display: inline-block;
@@ -3371,13 +3416,17 @@ html {
         height: 36px;
         line-height: 36px;
         font-size: 1.1rem;
+
+        &:first-child {
+          margin-top: 6px;
+        }
       }
       span {
         display: inline-block;
         width: 100%;
         height: 26px;
         line-height: 26px;
-        font-size: .9rem;
+        font-size: 1rem;
 
         &.for_e {
           font-size: 1.3rem;
@@ -3389,12 +3438,16 @@ html {
           margin-top: 26px;
         }
         a {
-          // text-decoration: none;
           color: white;
-          font-size: 1rem;
+          font-size: 1.1rem;
           cursor: pointer;
         }
+
+        &:last-child {
+          margin-bottom: 10px;
+        }
       }
+
       > div {
         display: inline-block;
         width: 100%;
@@ -3421,7 +3474,8 @@ html {
     }
     .n3 {
       padding-left: 20px;
-      height: 400px - 30px * 2 - 2px * 2;
+      height: 350px - 30px * 2 - 2px * 2;
+
       iframe {
         border: 10px solid white;
         display: inline-block;
@@ -3431,6 +3485,7 @@ html {
     }
 
   }
+
   @include range-width(0, 915px) {
     > div {
       padding: 12px;
@@ -3464,9 +3519,10 @@ html {
         padding-top: 10px;
         padding-bottom: 10px;
       }
+
       .n3 {
         width: 50%;
-        height: 342px;
+        height: 270px;
       }
     }
   };
@@ -3478,17 +3534,17 @@ html {
 #footer {
   display: inline-block;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   background-color: rgba(0, 0, 0, 1.00);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
   > div {
     display: inline-block;
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    padding: 0 30px;
     margin: 0 auto;
     text-align: left;
     font-weight: bold;
@@ -3497,13 +3553,36 @@ html {
     font-size: .9rem;
   }
 
-  @include range-width(0, 768px) {
-    margin-top: 20px;
-    padding: 5px 0;
+  @include range-width(960px, 1200px) {
+    padding-left: 10px; 
+    padding-right: 10px; 
+  }
+
+  @include range-width(450px, 770px) {
+    margin-top: 30px;
+  }
+
+  @include range-width(450px, 960px) {
+    // margin-top: 20px;
+    padding: 10px 0;
     height: 100%;
-    line-height: 20px;
-    font-size: 1.2rem;
+    line-height: 30px;
+    font-size: 1rem;
+
     > div {
+      text-align: center;
+    }
+  }
+
+  @include range-width(0, 450px) {
+    margin-top: 30px;
+    line-height: auto;
+    font-weight: thin;
+    padding: 6px;
+    line-height: 20px;
+
+    > div {
+      font-size: .8rem;
       text-align: center;
     }
   }
@@ -3553,6 +3632,7 @@ html {
     }
   }
 }
+
 #contact-bpanel {
   @include range-width(0, 768px) {
     display: inline-block;
@@ -3571,6 +3651,7 @@ html {
     }
   }
 }
+
 #contact-t {
   display: inline-block;
   width: 100%;
@@ -3595,7 +3676,6 @@ html {
     }
   }
 }
-
 
 .lightbox .lb-image {
   border-width: 20px;
@@ -3647,6 +3727,7 @@ html {
     }
   }
 }
+
 .lb-nav a.lb-prev, .lb-nav a.lb-next {
   @include opacity(.95);
   width: 72px;
@@ -3675,6 +3756,7 @@ html {
     @include rotate(-90deg);
   }
 }
+
 .lb-nav a.lb-next {
   left: auto;
   right: 0;
@@ -3828,13 +3910,14 @@ html {
   }
 }
 
-
 body.blackMark{
   overflow: hidden;
 }
+
 .blackmark.off{
   display: none;
 }
+
 .blackmark {
   display: inline-block;
   width: 100%;

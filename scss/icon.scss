@@ -6,12 +6,6 @@
   @include font-smoothing(antialiased);
 }
 
-.icon-dot-single:before {
-  content: "\e90d";
-}
-.icon-x:before {
-  content: "\e90c";
-}
 .icon-arrow-long-left:before {
   content: "\e900";
 }
@@ -53,4 +47,13 @@
 }
 .icon-facebook:before {
   content: "\ea90";
+}
+.icon-x:before {
+  content: "\e90c";
+}
+.icon-dot-single:before {
+  content: "\e90d";
+}
+.icon-link:before {
+  content: "\e90e";
 }
