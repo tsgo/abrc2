@@ -12,6 +12,30 @@ p {
   font-size: 1rem;
 }
 
+.ast {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.ast2 {
+  display: inline-block;
+  width: 98%;
+  position: relative;
+  float: right;
+  padding-bottom: 10px;
+
+  &:before {
+    display: inline-block;
+    content: '\e90d';
+    font-family: icomoon;
+    position: absolute;
+    left: -18px;
+  }
+}
+
 .textS_bord {
   display: inline-block;
   width: 100%;
@@ -21,6 +45,11 @@ p {
   border-bottom: 1px solid rgba(228, 228, 228, 1.00);
   padding: 10px 0;
   margin: 20px 0;
+
+  &.c01 {
+    border-top: 1px solid rgba(91, 47, 119, 1.00);
+    border-bottom: 1px solid rgba(91, 47, 119, 1.00);
+  }
 }
 
 .color_p {

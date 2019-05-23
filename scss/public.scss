@@ -2427,7 +2427,7 @@ html {
     display: inline-block;
     width: 100%;
     min-height: 600px - 6px;
-    padding: 20px;
+    padding: 30px 40px;
     word-break: normal;
     text-align: left;
 
@@ -2600,6 +2600,7 @@ html {
   .a {
     display: inline-block;
     width: 100%;
+    padding: 30px 40px;
 
     @include range-width(0, 420px) {
       padding: 16px;
