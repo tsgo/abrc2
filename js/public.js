@@ -87,11 +87,11 @@ $(function () {
     $t.find ('> div').width ($t.find ('> div > a').map (function () { return 2 + $(this).outerWidth (); }).toArray ().reduce (function (a, b) { return a + b; }));
     $t.find ('> div > a').height ($t.find ('> div').height ());
   });
-  $('ol.map').each (function () {
-    $(this).find ('>li>span').click (function () {
-      $(this).toggleClass ('a');//.siblings ().removeClass ('a');
-    });
-  });
+  // $('ol.map').each (function () {
+  //   $(this).find ('>li>span').click (function () {
+  //     $(this).toggleClass ('a');//.siblings ().removeClass ('a');
+  //   });
+  // });
   $('#contact-t > a').click (function () {
     $('html').animate ({ scrollTop: $(!$(this).index () ? '#contact-bpanel' : '#one-main').offset ().top + 'px' },'slow');
   });

@@ -59,7 +59,7 @@ p {
     height: 30px;
     width: 5px;
     background-color: rgba(102, 54, 130, 1.00) ;
-    margin-top: 5px;
+    // margin-top: 5px;
     margin-right: 10px;
   }
 
@@ -69,4 +69,31 @@ p {
     }
   }
 }
+
+
+.color_b {
+  &:before {
+    display: inline-block;
+    content: '';
+    height: 30px;
+    width: 5px;
+    background-color: rgba(44, 74, 144, 1.00);
+    margin-right: 10px;
+  }
+
+  @include range-width(0, 450px) {
+    &:before {
+      height: 25px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
