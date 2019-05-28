@@ -12,6 +12,18 @@ p {
   font-size: 1rem;
 }
 
+.speaker_title {
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  margin-top: 16px;
+  padding: 0 20px;
+  color: rgba(38, 65, 133, 1.00);
+  text-align: left;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .ast {
   display: inline-block;
   width: 100%;

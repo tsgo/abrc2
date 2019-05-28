@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gz7ihi');
-  src:  url('fonts/icomoon.eot?gz7ihi#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gz7ihi') format('truetype'),
-    url('fonts/icomoon.woff?gz7ihi') format('woff'),
-    url('fonts/icomoon.svg?gz7ihi#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ncoz1b');
+  src:  url('fonts/icomoon.eot?ncoz1b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ncoz1b') format('truetype'),
+    url('fonts/icomoon.woff?ncoz1b') format('woff'),
+    url('fonts/icomoon.svg?ncoz1b#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -72,6 +72,18 @@
 .icon-dot-single:before {
   content: "\e90d";
 }
+.icon-calendar:before {
+  content: "\e90f";
+}
 .icon-link:before {
   content: "\e90e";
+}
+.icon-location:before {
+  content: "\e912";
+}
+.icon-time:before {
+  content: "\e910";
+}
+.icon-calendar1:before {
+  content: "\e911";
 }
