@@ -249,7 +249,7 @@ html {
   height: 238px;
 
   @include range-width(0, 768px) {
-    height: 32px + 60px;
+    height: 88px;
   }
 
   .bg {
@@ -260,7 +260,7 @@ html {
     width: 100%;
     height: 100%;
     @include range-width(0, 768px) {
-      height: 70px;
+      height: 88px;
     };
   }
 
@@ -423,7 +423,7 @@ html {
       }
 
       > a:last-child {
-        width: 240px - 2px;
+        width: 240px;
         @include range-width(0, 850px) { width: 150px - 2px; }
         @include range-width(850px, 970px) { width: 180px - 2px; }
         @include range-width(970px, 1050px) { width: 200px - 2px; };
@@ -835,6 +835,7 @@ html {
           @include range-width(0, 920px) {
             width: 100%;
             margin-right: 0;
+            margin-bottom: 14px;
           }
         }
 
@@ -859,7 +860,7 @@ html {
 
           @include range-width(0, 920px) {
             width: 100%;
-            padding-right: inherit;
+            padding-right: 16px;
             float: none;
           }
         }
@@ -1042,14 +1043,15 @@ html {
 
 #smenu {
   display: inline-block;
+
   @include range-width(768px) {
     display: none;
   };
-  width: 100%;
 
+  width: 100%;
   min-height: 30px;
   line-height: 30px;
-  margin-top: 10px;
+  // margin-top: 10px;
 
   overflow-y: auto;
   text-align: left;
@@ -2203,16 +2205,17 @@ html {
           width: calc(100% - 180px);
           
           + * {
-            width: 180px !important;
+            width: 180px ;
           }
 
-          @include range-width(0, 768px) {
-            width: 180px;
-            // height: 72px;
+
+          @include range-width(0, 1025px) {
+            width: 50%;
+            height: 72px;
             // margin-top: 4px;
 
             + * {
-              width: calc(100% - 180px);
+              width: 50%;
               // height: 4 * 20px;
               margin-top: 0;
             }
@@ -2233,17 +2236,31 @@ html {
           }
         }
 
+        .m3_ptype {
+          display: inline-block;
+          width: 67% !important;
+
+          @include range-width(0, 1025px) {
+            width: 50% !important;
+          }
+        }
+
         *:not(._ic) {
           width: 100%;
           line-height: 20px; 
           height: 58px;
           font-size: 1.1rem;
+          line-height: 1.6rem;
           overflow: hidden;
           text-align: left;
           padding-left: 15px;
           color: rgba(40, 40, 40, .9);
           // margin-top: 4px;
           word-break: break-all;
+
+          @include range-width(0, 1025px) {
+            width: 100%;
+          }
         }
       }
 
@@ -3022,21 +3039,31 @@ html {
 
 .t1, .t2, .t3, .t4 {
   position: relative;
+  // display: inline-block;
+  // width: 100%;
+  // background-color: white;
+  // @include box-shadow(1px 1px 2px rgba(200, 200, 200, 1.00));
+  // margin-top: 32px;
+  // padding: 30px;
   display: inline-block;
   width: 100%;
   background-color: white;
-  @include box-shadow(1px 1px 2px rgba(200, 200, 200, 1.00));
   margin-top: 32px;
   padding: 30px;
+  @include border-radius(2px);
+  
+  @include range-width(0, 420px) {
+    margin-top: 16px;
+  }
 
   @include range-width(0, 768px) {
     padding: 16px;
     margin-top: 16px;
   } 
-  @include range-width(0, 420px) {
-    width: calc(100% + 8px * 2);
-    margin-left: -8px;
-  }
+  // @include range-width(0, 420px) {
+  //   width: calc(100% + 8px * 2);
+  //   margin-left: -8px;
+  // }
   > div {
     display: inline-block;
     width: 100%;
@@ -3224,16 +3251,16 @@ html {
       border-collapse: separate;
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
-      font-size: 1.1rem;
+      font-size: 1rem;
       + table {
         margin-top: 8px;
       }
       tr {
         &.t-main {
           td {
-            background-color: rgba(254, 171, 59, 1.00);
-            color: rgba(58, 59, 60, 1.00);
-            // color: white;
+            background-color: rgba(38, 65, 133, 1.00);
+            // color: rgba(58, 59, 60, 1.00);
+            color: white;
             padding: 6px;
             text-align: center;
             border: 1px solid rgba(214, 215, 216, 1.00);
@@ -3241,14 +3268,16 @@ html {
         }
         &.t-title {
           td {
-            background-color: rgba(110, 193, 58, 1.00);
-            color: rgba(16, 31, 9, 1.00);
+            background-color: rgba(194, 194, 194, 1.00);
+            // color: rgba(16, 31, 9, 1.00);
+            color: rgba(40, 40, 40, .9);
             padding: 6px;
             text-align: left;
             border: 1px solid rgba(214, 215, 216, 1.00);
             border-top: 0;
-            // width: calc(100% / 3);
             border-right: 0;
+            font-weight: 600;
+
             &:last-child {
               border-right: 1px solid rgba(214, 215, 216, 1.00);
             }
@@ -3258,12 +3287,13 @@ html {
           td {
             background-color: white;
             vertical-align: middle;
-            padding: 6px;
+            padding: 10px 5px;
             border: 1px solid rgba(214, 215, 216, 1.00);
             border-top: 0;
             border-right: 0;
             text-align: left;
-            line-height: 30px;
+            line-height: 1.6rem;
+
             &:last-child {
               border-right: 1px solid rgba(214, 215, 216, 1.00);
             }
@@ -3271,6 +3301,10 @@ html {
             span {
               display: inline-block;
               width: 100%;
+            }
+
+            &.t-cent {
+              text-align: center;
             }
           }
           &:nth-child(2n + 1) {
