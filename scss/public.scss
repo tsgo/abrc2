@@ -1190,6 +1190,7 @@ html {
 
           > a {
             display: inline-block;
+            cursor: pointer;
             width: 100%;
             // min-height: 80px;
             // line-height: 24px;
@@ -1198,8 +1199,9 @@ html {
             margin-top: 16px;
             text-decoration: none;
             font-size: 1.3rem;
-            background-color: rgba(200, 201, 202, 1.00);
-            @include transition(background-color .3s);            
+            background-color: rgba(194, 194, 194, 1.00);
+            @include transition(background-color .3s);        
+            @include border-radius(2px);
           }
 
           &.o {
@@ -1213,7 +1215,7 @@ html {
           &.p {
             > a {
               &.a, &:hover {
-                background-color: rgba(111, 62, 231, 1.00);
+                background-color: rgba(38, 65, 133, 1.00);
               }
             }
           }
@@ -2315,6 +2317,10 @@ html {
           // margin-top: 4px;
           word-break: break-all;
 
+          &:hover, &:active {
+            color: rgba(38, 65, 133, 1.00);
+          }
+
           @include range-width(0, 1025px) {
             width: 100%;
           }
@@ -2721,6 +2727,18 @@ html {
             &:after {
               display: none;
             }
+          }
+        }
+
+        &.down_p {
+          color: rgba(40, 40, 40, .9);
+          &:before {
+            display: inline-block;
+            content: '\e914';
+            font-family: icomoon;
+            margin-right: 10px;
+            font-size: .9rem;
+            color: rgba(44, 74, 144, 1.00);
           }
         }
 
