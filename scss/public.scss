@@ -64,6 +64,11 @@ html {
   height: 60px;
   font-size: .9rem;
 
+  &.indextop {
+    // height: 10px;
+    display: none;
+  }
+
   @include range-width(768px, 1250px) {
     padding: 0 10px;
   }
@@ -252,6 +257,8 @@ html {
     height: 88px;
   }
 
+
+
   .bg {
     position: absolute;
     left: 0;
@@ -305,8 +312,8 @@ html {
       height: 80px;
 
       background-color: white;
-      -webkit-filter: drop-shadow(0px -3px 4px rgba(0, 0, 0, 0.2));
-      filter: drop-shadow(0px -3px 4px rgba(0, 0, 0, 0.2));
+      -webkit-filter: drop-shadow(0px -4px 4px rgba(0,0,0,0.3));
+      filter: drop-shadow(0px -4px 4px rgba(0,0,0,0.3));
 
       @include clearfix();
       
@@ -389,7 +396,37 @@ html {
           @include transition(background-color .3s);
         }
 
-        $colors: (rgba(113, 62, 141, 1.00), rgba(213, 93, 35, 1.00), rgba(197, 26, 121, 1.00), rgba(226, 158, 46, 1.00), rgba(160, 5, 28, 1.00), rgba(41, 128, 114, 1.00), rgba(51, 83, 155, 1.00));
+        $colors: 
+          (
+          rgba(2, 38, 87, 1.00), 
+          rgba(86, 157, 28, 1.00), 
+          rgba(32, 188, 177, 1.00), 
+          rgba(249, 178, 42, 1.00), 
+          rgba(75, 163, 195, 1.00), 
+          rgba(111, 70, 228, 1.00), 
+          rgba(51, 83, 155, 1.00)
+          );
+
+        // $colors: (
+        //   rgba(2, 38, 87, 1.00), 
+        //   rgba(86, 157, 28, 1.00), 
+        //   rgba(32, 188, 177, 1.00), 
+        //   rgba(249, 178, 42, 1.00), 
+        //   rgba(75, 163, 195, 1.00), 
+        //   rgba(111, 70, 228, 1.00), 
+        //   rgba(255, 255, 255, 0.00));
+
+
+          // $colors: 
+          // (
+          // rgba(113, 62, 141, 1.00), 
+          // rgba(200, 72, 29, 1.00), 
+          // rgba(197, 26, 121, 1.00), 
+          // rgba(226, 158, 46, 1.00), 
+          // rgba(160, 5, 28, 1.00), 
+          // rgba(41, 128, 114, 1.00), 
+          // rgba(51, 83, 155, 1.00)
+          // );
         
         @for $i from 1 through length($colors) {
           &:nth-child(#{$i}) {
@@ -1181,6 +1218,7 @@ html {
           }
         }
       }
+
       &.r {
         @include range-width(0, 768px) {
           display: none;
@@ -1232,10 +1270,10 @@ html {
 
           &.yellow {
             > a {
-              line-height: 40px;
+              // line-height: 40px;
 
               &.a, &:hover {
-                background-color: rgba(254, 171, 4, 1.00);
+                background-color: rgba(207, 82, 32, 1.00);
               }
             }
           }
@@ -1244,6 +1282,32 @@ html {
             > a {
               &.a, &:hover {
                 background-color: rgba(0, 36, 88, 1.00);
+              }
+            }
+          }
+
+          &.c4 {
+            > a {
+              &.a, &:hover {
+                background-color: rgba(189, 24, 110, 1.00);
+              }
+            }
+          }
+
+          &.c5 {
+            > a {
+              // line-height: 40px;
+
+              &.a, &:hover {
+                background-color: rgba(189, 24, 110, 1.00);
+              }
+            }
+          }
+
+          &.c6 {
+            > a {
+              &.a, &:hover {
+                background-color: rgba(222, 147, 41, 1.00);
               }
             }
           }
@@ -1325,9 +1389,19 @@ html {
 
         &.g {
           background-color: rgba(25, 169, 130, 1.00);
+          @include border-radius(2px);
+          &:hover, &:active {
+            background-color: rgba(25, 169, 130, .9);
+          }
+          
         }
         &.lg {
           background-color: rgba(28, 151, 25, 1.00);
+          @include border-radius(2px);
+          &:hover, &:active {
+            background-color: rgba(28, 151, 25, .9);
+          }
+          
         }
         &.b {
           background-color: rgba(5, 36, 89, 1.00);
@@ -1431,7 +1505,7 @@ html {
   }
 
   + .tip {
-    margin-top: 32px * 2 !important;
+    margin-top: 49px !important;
 
     @include range-width(0, 920px) {
       margin-top: 16px * 2 !important;
@@ -1932,7 +2006,8 @@ html {
   height: 200px * 3 + 32px * 2;
   margin-top: 30px;
   overflow: hidden;
-
+  @include border-radius(2px);
+  
   @include range-width(0, 920px) {
     margin-top: 16px;
     height: 200px * 3 + 16px * 2;
@@ -2071,26 +2146,52 @@ html {
     //   }
     // }
   }
+
   &.y2 {
     height: auto;
 
     .o {
-      color: rgba(253, 181, 2, 1.00);
+      color: rgba(222, 147, 41, 1.00);
     }
+
     .bt {
       display: inline-block;
       width: calc(100% - 16px * 2);
       margin: 16px;
-      border-top: 1px dashed rgba(1, 2, 3, 1.00);
+      border-top: 1px dashed rgba(217, 136, 37, 1.00);
       padding-top: 16px;
       padding-left: 16px;
       text-align: left;
+      color: rgba(40, 40, 40, .9);
 
       > span {
         display: inline-block;
         width: 100%;
         text-align: left;
-        color: rgba(1, 2, 3, 1.00);
+        color: rgba(40, 40, 40, .8);
+        padding-bottom: 10px;
+
+        &.s1 {
+          &:before {
+            display: inline-block;
+            content: '\e919';
+            font-family: icomoon;
+            margin-right: 10px;
+            margin-top: 2px;
+            font-size: .9rem;
+          }
+        }
+
+        &.s2 {
+          &:before {
+            display: inline-block;
+            content: '\e918';
+            font-family: icomoon;
+            margin-right: 10px;
+            margin-top: 2px;
+            font-size: .9rem;
+          }
+        }
       }
 
       a {
@@ -2098,19 +2199,34 @@ html {
         cursor: pointer;
         width: 100%;
         word-wrap:break-word;
-        color: #00224d;
+        color: rgba(217, 136, 37, 1.00);
         text-decoration: none;
         @include transition(all .3s);
+        padding-bottom: 10px;
         
         &:hover, &:active {
           text-decoration: underline;
         }
+
+        &:before {
+          display: inline-block;
+          content: '\e917';
+          font-family: icomoon;
+          margin-right: 10px;
+          margin-top: 3px;
+          color: rgba(40, 40, 40, .8);
+          font-size: .9rem;
+        }
       }
     }
+
     ul {
+      padding-right: 20px;
       li {
         text-align: left;
-        color: rgba(137, 138, 139, 1.00);
+        color: rgba(118, 118, 117, 1.00);
+        padding-bottom: 5px;
+        font-size: 1rem;
       }
     }
   }
@@ -3088,9 +3204,11 @@ html {
   display: inline-block;
   width: 100%;
   background-color: white;
-  @include box-shadow(1px 1px 2px rgba(200, 200, 200, 1.00));
+  // @include box-shadow(1px 1px 2px rgba(200, 200, 200, 1.00));
   margin-top: 32px;
   padding: 30px;
+  @include border-radius(2px);
+  
   @include range-width(0, 420px) {
     padding: 16px;
     margin-top: 16px;
@@ -3123,7 +3241,7 @@ html {
   }
   &.lb {
     > * + * {
-      border-top-color: rgba(0, 186, 175, 1.00);
+      border-top-color: rgba(189, 24, 110, 1.00);
     }
   }
 }
@@ -3277,14 +3395,20 @@ html {
       border-collapse: separate;
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
-      font-size: 1.1rem;
+      font-size: 1rem;
 
       thead {
         tr {
           height: 32px;
           th {
-            padding: 6px;
+            padding: 6px 10px;
             background-color: rgba(95, 202, 191, 1.00);
+
+            &.patent_c {
+              color: white;
+              background-color: rgba(189, 24, 110, 1.00);
+              text-align: center;
+            }
 
             border-left: 1px solid rgba(214, 215, 216, 1.00);
             &:last-child {
@@ -3303,14 +3427,14 @@ html {
           min-height: 32px;
           background-color: rgba(255, 255, 255, 1.00);
           td {
-            padding: 6px;
+            padding: 6px 10px;
             border-top: 1px solid rgba(214, 215, 216, 1.00);
             border-left: 1px solid rgba(214, 215, 216, 1.00);
             &:last-child {
               border-right: 1px solid rgba(214, 215, 216, 1.00);
             }
             vertical-align: middle;
-            line-height: 33px;
+            line-height: 1.6rem;
           }
 
           &:nth-child(2n) {
@@ -3328,6 +3452,7 @@ html {
     }
   }
 }
+
 
 .t1 {
   table {
@@ -3353,9 +3478,11 @@ html {
       text-align: left;
       color: rgba(46, 47, 48, 1.00);
       font-size: 1.1rem;
+
       + table {
-        margin-top: 8px;
+        margin-top: 35px;
       }
+
       tr {
         &.t-main {
           td {
@@ -3385,11 +3512,12 @@ html {
           td {
             background-color: white;
             vertical-align: middle;
-            padding: 6px;
+            padding: 6px 10px;
             border: 1px solid rgba(214, 215, 216, 1.00);
             border-top: 0;
             width: calc(100% / 3);
             border-right: 0;
+            font-size: 1rem;
             &:last-child {
               border-right: 1px solid rgba(214, 215, 216, 1.00);
             }
@@ -3732,6 +3860,8 @@ html {
     background-color: white;
     height: 460px;
     
+    @include border-radius(2px);
+    overflow: hidden;
 
     &:nth-child(4n+1), &:nth-child(4n+2), &:nth-child(4n+3) {
       margin-right: 20px;
@@ -3740,13 +3870,27 @@ html {
     .learned_pic {
       display: inline-block;
       width: 100%;
-      height: 280px;
+      height: 270px;
       overflow: hidden;
       border-bottom: 1px solid rgba(106, 106, 106, .2);
 
-      img {
+      a {
+        display: inline-block;
         width: 100%;
-        max-width: 270px;
+        cursor: pointer;
+        outline: 0;
+        text-decoration: none;
+
+        img {
+          width: 100%;
+          max-width: 270px;
+        }
+
+        &:hover, &:active {
+          img {
+            opacity:0.8;
+          }
+        }
       }
     }
 
@@ -3765,8 +3909,110 @@ html {
         color: black;
         @include transition(all .3s);
         margin-bottom: 10px;
+
+        &:hover, &:active {
+          color: rgba(217, 136, 37, 1.00);
+        }
+      }
+
+      p {
+        display: inline-block;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0 0 0 10px;
+        margin: 0;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          left: -8px;
+          display: inline-block;
+          content: '・';
+          color: rgba(10, 32, 81, 1.00);
+        }
+      }
+    }
+  }
+
+  .learned3 {
+    display: inline-block;
+    width: calc(100% / 3 - 20px * 3 / 3);
+    @include border-radius(3px);
+    // padding: 15px;
+    float: left;
+    margin-top: 32px;
+    background-color: white;
+    height: 460px;
+
+    @include border-radius(2px);
+    overflow: hidden;
+    
+
+    @include range-width(0, 750px) {
+      width: 100%;
+    }
+    
+
+    &:nth-child(3n+1), &:nth-child(3n+2), &:nth-child(3n+4) {
+      margin-right: 20px;
+
+      @include range-width(0, 750px) {
+        margin-right: 0;
+      }
+    }
+
+    .learned_pic3 {
+      display: inline-block;
+      width: 100%;
+      height: 270px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(106, 106, 106, .2);
+
+      a {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        outline: 0;
+        text-decoration: none;
+
+        img {
+          width: 100%;
+          max-width: 270px;
+        }
+
+        &:hover, &:active {
+          img {
+            opacity:0.8;
+          }
+        }
+      }
+    }
+
+    .learned_type3 {
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+
+      a {
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: black;
+        @include transition(all .3s);
+        margin-bottom: 10px;
+
         &:hover, &:active {
           color: rgba(10, 32, 81, 1.00);
+        }
+
+        &.a_orange {
+          &:hover, &:active {
+            color: rgba(200, 72, 29, 1.00);
+          }
         }
       }
 
@@ -4222,16 +4468,30 @@ html {
     font-size: 1.5rem;
   }
   .atc {
-    margin-top: 16px;
+    margin-top: 32px;
   }
   .bnr {
     display: inline-block;
     width: 100%;
-    height: 400px;
+    height: 250px;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
   }
   .bs {
     display: inline-block;
     padding: 32px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+
     @include range-width(0, 375px) {
       padding: 16px;
     }
@@ -4259,6 +4519,7 @@ html {
           }
         }
       }
+
       @include range-width(768px, 1100px) {
         width: calc((100% - (2 - 1) * 32px) / 2);
         height: 120px;
@@ -4280,6 +4541,7 @@ html {
           }
         }
       }
+
       @include range-width(1100px) {
         width: calc((100% - (3 - 1) * 32px) / 3);
         height: 120px;
@@ -4289,6 +4551,7 @@ html {
         }
         &:nth-child(n + 4) {
           margin-top: 24px * 2 + 3px / 2;
+
           &:before {
             content: '';
             position: absolute;
@@ -4297,8 +4560,8 @@ html {
             display: inline-block;
             width: 100%;
             height: 3px;
-            border: 1px solid rgba(60, 57, 57, 1.00);
-            background-color: white;
+            border-top: 3px double #c9c9c9;
+            // background-color: white;
           }
         }
       };
@@ -4336,12 +4599,14 @@ html {
         }
       }
       .ifo {
-        padding-left: 8px;
+        padding-left: 15px;
+        position: relative;
+
         > * {
           display: block;
           text-align: left;
           font-size: 1.1rem;
-          color: rgba(47, 47, 47, 1.00);
+          color: rgba(40, 40, 40, .9);
         }
         span {
           line-height: 23px;
@@ -4349,11 +4614,28 @@ html {
           overflow: hidden;
         }
         a {
-          color: rgba(4, 33, 93, 1.00);
+          color: rgba(139, 11, 25, 1.00);
           text-decoration: none;
           margin-top: 8px;
-          font-weight: bold;
+          text-decoration: none;
+          // font-weight: bold;
           font-size: 1rem;
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          @include transition(all .3s);
+          
+          &:after {
+            display: inline-block;
+            content: '\e904';
+            font-family: icomoon;
+            margin-top: 4px;
+          }
+
+          &:hover, &:active {
+            color: rgba(139, 11, 25, .8);
+          }
         }
       }
     }
