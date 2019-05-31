@@ -258,6 +258,12 @@ html {
   }
 
 
+  &.newindex {
+    height: 155px;
+    background-color: rgba(243, 242, 240, 1.00);
+    border-top: 5px solid rgba(9, 32, 79, 1.00);
+  }
+
 
   .bg {
     position: absolute;
@@ -283,6 +289,12 @@ html {
       cursor: pointer;
       text-decoration: none;
 
+      &.index_ta {
+        width: 100%;
+        max-width: 530px;
+        float: left;
+      }
+
       > img {
         display: inline-block;
         max-width: 100%;
@@ -298,6 +310,159 @@ html {
         @include range-width(0, 415px) {
           margin-top: 4px;
           margin-bottom: 4px;
+        }
+
+        &.index_img {
+          width: 100%;
+          max-width: 530px;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .other_menu {
+      display: inline-block;
+      width: calc(100% - 530px);
+      height: calc(100% - 60px);
+      float: right;
+
+      .aboxs {
+        display: inline-block;
+        margin-top: 15px;
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+        margin-bottom: 10px;
+
+        a {
+          display: inline-block;
+          position: relative;
+          color: rgba(40, 40, 40, .9);
+          font-size: .9rem;
+          text-decoration: none;
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: rgba(0, 29, 80, 1.00);
+          }
+
+          &:after {
+            display: inline-block;
+            content: '・';
+            padding: 0 3px;
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .n_n2 {
+        width: 280px;
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-right: 20px;
+
+        > input {
+          display: inline-block;
+          width: 100%;
+          height: 28px;
+          line-height: 28px;
+          // margin-top: (60px - 28px) / 2;
+          @include border-radius(28px / 2);
+          border: 1px solid rgba(40, 40, 40, .9);
+          background-color: transparent;
+          padding: 2px 15px 0 15px;
+          color: rgba(40, 40, 40, .9);
+
+          @include input-placeholder {
+            font-size: .9rem;
+            font-weight: normal;
+            color: rgba(40, 40, 40, .9);
+            line-height: 30px;
+          }
+
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        > button {
+          position: absolute;
+          right: 0;
+          top: -1px;
+          display: inline-block;
+          height: 28px;
+          line-height: 28px;
+          width: 34px;
+          cursor: pointer;
+
+          background-color: transparent;
+          color: rgba(40, 40, 40, .9);
+          outline: 0;
+          border: 0;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .n_n3 {
+        width: 80px;
+        // height: 60px;
+        // line-height: 60px;
+        position: relative;
+        display: inline-block;
+        float: right;
+
+        > label {
+          display: inline-block;
+          margin: 0 auto;
+          color: rgba(40, 40, 40, .9);
+          cursor: pointer;
+          @include transition(color .3s);
+
+          &:hover {
+            color: rgba(40, 40, 40, .9);
+          }
+
+          &:after {
+            font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal;
+            @include font-smoothing(antialiased);
+            content: "\e902";
+          }
+        }
+
+        > a {
+          position: absolute;
+          bottom: -40px;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          background-color: rgba(40, 40, 40, .5);
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          z-index: 100;
+          @include transition(color .3s);
+          text-align: center;
+
+          &:hover, &:active {
+            color: white;
+          }
+        }
+
+        &:hover {
+          a {
+            display: inline-block;
+          }
         }
       }
     }
@@ -321,6 +486,13 @@ html {
         display: none;
       }
 
+      &.new_in_menu {
+        height: 60px;
+        line-height: 70px;
+        -webkit-filter: none;
+        filter: none;
+      }
+
       > * {
         position: relative;
         float: left;
@@ -338,8 +510,21 @@ html {
         
         text-align: center;
 
+        &.new_in_menu_boxs {
+          height: 60px;
+          line-height: 70px;
+
+          &:before {
+            height: 5px;
+          }
+        } 
+
         span {
           line-height: 86px ;
+
+          &.new_in_menu_s {
+            line-height: 70px;
+          }
 
           &:after {
             display: inline-block;
@@ -398,12 +583,12 @@ html {
 
         $colors: 
           (
-          rgba(2, 38, 87, 1.00), 
-          rgba(86, 157, 28, 1.00), 
-          rgba(32, 188, 177, 1.00), 
-          rgba(249, 178, 42, 1.00), 
-          rgba(75, 163, 195, 1.00), 
-          rgba(111, 70, 228, 1.00), 
+          rgba(113, 62, 141, 1.00), 
+          rgba(200, 72, 29, 1.00), 
+          rgba(197, 26, 121, 1.00), 
+          rgba(226, 158, 46, 1.00), 
+          rgba(160, 5, 28, 1.00), 
+          rgba(41, 128, 114, 1.00), 
           rgba(51, 83, 155, 1.00)
           );
 
@@ -525,6 +710,7 @@ html {
             height: 60px;
             line-height: 60px;
             text-decoration: none;
+
             
             @include overflow-docx3();
             text-align: left;
@@ -731,8 +917,8 @@ html {
   z-index: 1;
   display: inline-block;
   width: 100%;
-  height: 600px;
-  line-height: 600px;
+  height: 660px;
+  line-height: 660px;
   overflow: hidden;
 
   @include range-width(0, 900px) {
@@ -754,17 +940,21 @@ html {
     position: absolute;
     top: 0;
     display: inline-block;
-    width: calc(50% - 1200px / 2);
+    // width: calc(50% - 1200px / 2);
     @include range-width(0, 1350px) {
-      width: 120px;
+      // width: 120px;
     };
 
     
-    font-size: 8.3rem;
-    color: white;
+    font-size: 5rem;
+    color: rgba(118, 118, 117, .8);
     text-decoration: none;
     z-index: 3;
     cursor: pointer;
+
+    &:hover, &:active {
+      color: rgba(9, 32, 79, 1.00);
+    }
 
     &.l {
       left: 0;
@@ -773,11 +963,11 @@ html {
       right: 0;
     }
     @include range-width(0, 768px) {
-      font-size: 5.8rem;
+      font-size: 3rem;
     }
     @include range-width(0, 420px) {
-      font-size: 4rem;
-      width: 70px;
+      font-size: 2rem;
+      width: 50px;
       // display: none;
     }
   }
@@ -793,23 +983,24 @@ html {
       display: inline-block;
       height: 100%;
       @include transition(left .3s);
-      width: 1200px;
+      width: 100%;
       border: 1px solid rgba(255, 255, 255, 1);
       border-top: 0;
       border-bottom: 0;
       
       &:nth-child(1) {
-        left: calc(50% - 1200px / 2 - 1200px);
+        left: -100%;
       }
       &:nth-child(2) {
-        left: calc(50% - 1200px / 2);
+        left: 0;
       }
       &:nth-child(3) {
-        left: calc(50% + 1200px / 2);
+        left: 100%;
       }
       &:nth-child(n + 4) {
-        left: calc(50% + 1200px / 2 + 1200px);
+        left:100%;
       }
+
       @include range-width(0, 1200px) {
         width: 100%;
         border: 0;
@@ -934,8 +1125,11 @@ html {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 450px;
+        height: 399px;
         margin-top: 32px;
+        @include border-radius(2px);
+        overflow: hidden;
+        
         @include range-width(0, 920px) {
           margin-top: 16px;
         }
@@ -943,7 +1137,7 @@ html {
         > * {
           display: inline-block;
           float: left;
-          height: 450px;
+          height: 399px;
         }
         > .img {
           width: calc(100% - 300px);
@@ -994,40 +1188,66 @@ html {
         .x {
           display: block;
           width: 100%;
-          height: 0+450px / 3;
-          
+          // height: 0+450px / 3;
+          height: 133px;
+          border-bottom: 1px solid rgba(214, 214, 213, 1.00);
           background-color: white;
           text-align: left;
-          padding: 20px;
+          padding: 15px;
           cursor: pointer;
           position: relative;
           @include transition(background-color .3s);
+
+          &:last-child {
+            border-bottom: 0;
+          }
           
           .img {
             display: none;
           }
-          span {
-            display: inline-block;
+
+          span, .islink {
+            // display: inline-block;
             width: 100%;
             color: rgba(137, 137, 137, 1.00);
-            font-size: 1.2rem;
-            line-height: 28px;
+            font-size: 1rem;
+            // line-height: 1.5rem;
             word-break: break-all;
-            height: 20px * 4;
+            // height: 20px * 4;
             overflow: hidden;
             @include transition(color .3s);
+            display: -webkit-box;
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            color: rgba(40, 40, 40, .9);
+            text-decoration: none;
+
+            &:hover, &:active {
+              color: rgba(10, 32, 81, 1.00);
+            }
           }
+
           time {
             word-break: break-all;
             display: inline-block;
             width: 50%;
-            margin-top: 12px;
+            // margin-top: 12px;
+            margin-top: 15px;
+            color: rgba(40, 40, 40, .9);
+
+            &:before {
+              display: inline-block;
+              content: '\e90f';
+              font-family: icomoon;
+              margin-right: 6px;
+            }
           }
           .tmore {
             display: inline-block;
             position: absolute;
-            bottom: 0;
-            right: 0;
+            bottom: 10px;
+            right: 10px;
             display: inline-block;
             padding: 0 8px;
             background-color: rgba(3, 33, 94, 1.00);
@@ -1036,6 +1256,12 @@ html {
             height: 30px;
             line-height: 31px;
             font-size: .9rem;
+            @include border-radius(2px);
+
+            &:hover, &:active {
+              background-color: rgba(3, 33, 94, .8);
+            }
+            
           }
           @include range-width(0, 600px) {
             &.a {
@@ -1045,7 +1271,7 @@ html {
           }
           @include range-width(600px) {
             &.a {
-              background-color: rgba(201, 201, 201, 1.00);
+              background-color: rgba(194, 194, 194, .5);
               span {
                 color: rgba(49, 49, 49, 1.00);
               }
@@ -1537,6 +1763,21 @@ html {
 
       &:hover, &:active {
         color: rgba(3, 35, 95, 1.00);
+      }
+
+      &.search_type {
+        font-size: 1rem;
+        color: rgba(3, 35, 95, 1.00);
+        &:after {
+          display: inline-block;
+          content: '\e904';
+          font-family: icomoon;
+          margin-top: 3px;
+        }
+
+        &:hover, &:active {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -3495,7 +3736,7 @@ html {
         }
         &.t-title {
           td {
-            background-color: rgba(72, 156, 202, 1.00);
+            background-color: rgba(222, 147, 41, 1.00);
             color: white;
             padding: 6px;
             text-align: center;
@@ -3528,9 +3769,11 @@ html {
               font-weight: bold;
               a {
                 cursor: pointer;
-                color: rgba(18, 121, 171, 1.00);
+                color: rgba(222, 147, 41, 1.00);
                 font-weight: normal;
-
+                &:hover, &:active {
+                  text-decoration: underline;
+                }
                 // @include a(1px, true, );
               }
             }
