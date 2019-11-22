@@ -1086,7 +1086,7 @@ html {
       display: inline-block;
       
       &.l {
-        width: calc(100% - 386px);
+        width: calc(100% - 500px);
         // padding-left: 30px;
         // padding-right: 30px;
 
@@ -1174,9 +1174,9 @@ html {
           height: 399px;
         }
         > .img {
-          width: calc(100% - 300px);
+          width: calc(100% - 500px);
           + div {
-            width: 300px;
+            width: 500px;
             z-index: 1;
           }
           @include range-width(0, 600px) {
