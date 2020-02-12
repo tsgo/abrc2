@@ -4839,8 +4839,8 @@ html {
         width: calc((100% - (3 - 1) * 32px) / 3);
         height: 120px;
         &:nth-child(3n + 2) {
-          margin-left: 32px;
-          margin-right: 32px;
+          margin-left: 25px;
+          margin-right: 25px;
         }
         &:nth-child(n + 4) {
           margin-top: 24px * 2 + 3px / 2;
