@@ -321,6 +321,16 @@ html {
           width: 100%;
           max-width: 530px;
           margin-top: 7px;
+
+          @include range-width(805px, 935px) {
+            max-width: 400px;
+            margin-top: 13px;
+          }
+
+          @include range-width(750px, 805px) {
+            max-width: 350px;
+            margin-top: 15px;
+          }
         }
       }
     }
@@ -330,6 +340,14 @@ html {
       width: calc(100% - 530px);
       height: calc(100% - 60px);
       float: right;
+
+      @include range-width(805px, 935px) {
+        width: calc(100% - 400px);
+      }
+
+      @include range-width(750px, 805px) {
+        width: calc(100% - 350px);
+      }
 
       @include range-width(0, 750px) {
         display: none;
@@ -1348,7 +1366,7 @@ html {
   width: 100%;
   min-height: 30px;
   line-height: 30px;
-  // margin-top: 10px;
+  margin-top: 7px;
 
   overflow-y: auto;
   text-align: left;
